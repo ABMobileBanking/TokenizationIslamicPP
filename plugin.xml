@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android" id="com.ahliislamic.tokenization" version="1.0.0">
+	<name>TokenizationIslamic</name>
+	<js-module name="TokenizationIslamic" src="www/TokenizationIslamic.js">
+		<clobbers target="cordova.plugins.TokenizationIslamic" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="TokenizationIslamic">
+				<param name="android-package" value="com.ahliislamic.tokenization.TokenizationIslamic" />
+			</feature>
+		</config-file>
+		<config-file parent="/manifest/application" target="AndroidManifest.xml">
+			<service android:exported="true" android:name="com.thalesgroup.gemalto.d1.d1pay.D1HCEService" android:permission="android.permission.BIND_NFC_SERVICE">
+				<intent-filter>
+					<action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+					<category android:name="android.intent.category.DEFAULT" />
+				</intent-filter>
+				<meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/apduservice" />
+			</service>
+		</config-file>
+		
+		<config-file parent="/manifest/application" target="AndroidManifest.xml">
+			<service android:exported="false" android:name="com.ahliislamic.tokenization.D1FirebaseService">
+				<intent-filter>
+					<action android:name="com.google.firebase.MESSAGING_EVENT" />
+				</intent-filter>
+			</service>
+		</config-file>
+		
+		<config-file parent="/manifest/application" target="AndroidManifest.xml">
+			<service android:exported="true" android:name="com.ahliislamic.tokenization.D1HmsMessageService">
+				<intent-filter>
+					<action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+				</intent-filter>
+			</service>
+		</config-file>
+		
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:label="TransactionSent" android:name="com.ahliislamic.tokenization.TransactionSent" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+		</config-file>
+		
+		<config-file parent="/manifest/" target="AndroidManifest.xml">
+			<uses-feature android:name="android.hardware.nfc" android:required="false"/>
+			<uses-feature android:name="android.hardware.nfc.hce" android:required="false"/>
+			<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.NFC" />
+			<uses-permission android:name="android.permission.USE_BIOMETRIC" />
+			<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+		</config-file>
+		<config-file parent="/resources" target="res/values/strings.xml">
+			<string name="label_payment">payment</string>
+			<string name="label_d1_pay_description">payment description</string>
+		</config-file>
+		<resource-file src="src/android/assets/gemcbp.properties" target="assets/gemcbp.properties" />
+		<resource-file src="src/android/assets/mobilegateway.properties" target="assets/mobilegateway.properties" />
+		<resource-file src="src/android/assets/rages.properties" target="assets/rages.properties" />
+		
+		<resource-file src="src/android/apduservice.xml" target="res/xml/apduservice.xml" />
+		
+		<resource-file src="src/android/layout/transaction_sent_islamic.xml" target="res/layout/transaction_sent_islamic.xml" />
+		
+		<source-file src="src/android/drawable/islamic_dummy_card_image.png" target-dir="res/drawable/" />
+		<source-file src="src/android/drawable/islamic_back.png" target-dir="res/drawable/" />
+		<source-file src="src/android/drawable/islamic_header_bg.jpg" target-dir="res/drawable/" />
+		<source-file src="src/android/drawable/islamic_success.png" target-dir="res/drawable/" />
+		<source-file src="src/android/drawable/islamic_header.xml" target-dir="res/drawable/"/>
+		
+		<source-file src="src/android/TokenizationIslamic.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/D1FirebaseService.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/D1HmsMessageService.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/CoreUtils.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/PaymentData.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/PaymentErrorData.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/PaymentState.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		<source-file src="src/android/TransactionSent.java" target-dir="src/com/ahliislamic/tokenization/TokenizationIslamic" />
+		
+		<framework custom="true" src="src/android/d1-build.gradle" type="gradleReference" />
+		
+		<resource-file src="src/android/libs/d1-release-4.1.0.aar" target="libs/d1-release-4.1.0.aar" />
+		<resource-file src="src/android/libs/d1-debug-4.1.0.aar" target="libs/d1-debug-4.1.0.aar" />
+	</platform>
+
+	<platform name="ios">
+		<dependency id="pushwoosh-cordova-plugin" url="https://github.com/Pushwoosh/pushwoosh-phonegap-plugin.git#8.3.38.1-OS"/>
+		
+		<!-- Tokenization Configuration -->
+		<config-file parent="/*" target="config.xml">
+			<feature name="TokenizationIslamic">
+				<param name="ios-package" value="TokenizationIslamic" />
+			</feature>
+		</config-file>
+
+		<config-file target="config.xml" parent="/*">
+        	<preference name="deployment-target" value="15.0" />
+    	</config-file>
+		
+		<hook type="before_plugin_install" src="hooks/npmInstall.js"/>
+		<hook type="before_plugin_install" src="hooks/iosCopyExtensions.js"/>
+		<hook type="after_plugin_install" src="hooks/iosAddUIExtension.js"/>
+		<hook type="after_plugin_install" src="hooks/iosAddNONUIExtension.js"/>
+		
+		<!--  Hooks for fixing provisioning profiles  -->
+		<hook type="before_plugin_install" src="hooks/saveJsonInfo.js"/>
+		<hook type="before_plugin_install" src="hooks/install_prerequisites.js"/>
+		<hook type="after_plugin_install" src="hooks/copyAndUnzipProvisioningProfiles.js"/>
+		<hook type="after_plugin_install" src="hooks/fixExportOptions.js"/>
+		<hook type="before_build" src="hooks/copyProvisioningProfiles.js"/>
+		<hook type="before_build" src="hooks/editXcodeProj.js"/>
+		<hook type="before_build" src="hooks/fixReleaseSection.js"/>
+
+		<!-- Register a hook to modify the Podfile -->
+    	<hook type="after_build" src="hooks/merge_podfile.js"/>
+
+		<!-- Required frameworks for tokenization and payment -->
+		<framework src="src/ios/D1/Debug/D1.xcframework" embed="true" custom="true" />
+		<framework src="src/ios/D1/Debug/D1Core.xcframework" embed="true" custom="true" />
+		<framework src="src/ios/D1/Debug/TPCSDKSwift.xcframework" embed="true" custom="true" />
+		<framework src="src/ios/D1/Debug/SecureLogAPI.xcframework" embed="true" custom="true" />
+
+		<!-- Source files for tokenization -->
+		<source-file src="src/ios/TokenizationIslamic.swift" />
+		
+		<!-- Card Image Resource files -->
+		<resource-file src="src/ios/Resources/ahliislamic_logo.png" target="Resources/ahliislamic_logo.png" />
+		<resource-file src="src/ios/Resources/004.png" target="Resources/004.png" />
+		<resource-file src="src/ios/Resources/005.png" target="Resources/005.png" />
+		<resource-file src="src/ios/Resources/008.png" target="Resources/008.png" />
+		<resource-file src="src/ios/Resources/009.png" target="Resources/009.png" />
+		<resource-file src="src/ios/Resources/011.png" target="Resources/011.png" />
+		<resource-file src="src/ios/Resources/012.png" target="Resources/012.png" />
+		<resource-file src="src/ios/Resources/022.png" target="Resources/022.png" />
+		<resource-file src="src/ios/Resources/ISP.png" target="Resources/ISP.png" />
+		<resource-file src="src/ios/Resources/ITD.png" target="Resources/ITD.png" />
+		<resource-file src="src/ios/Resources/LDC.png" target="Resources/LDC.png" />
+		<resource-file src="src/ios/Resources/MK3.png" target="Resources/MK3.png" />
+		<resource-file src="src/ios/Resources/YIC.png" target="Resources/YIC.png" />
+		<resource-file src="src/ios/Resources/IPP-MSP.png" target="Resources/IPP-MSP.png" />
+		<resource-file src="src/ios/Resources/IPS-MSS.png" target="Resources/IPS-MSS.png" />
+
+		<!-- Application Group Entitlements for both Debug and Release -->
+		<config-file parent="com.apple.security.application-groups" target="*-Debug.plist">
+			<array>
+				<string>group.com.ahliislamic.om</string>
+			</array>
+		</config-file>
+		<config-file parent="com.apple.security.application-groups" target="*-Release.plist">
+			<array>
+				<string>group.com.ahliislamic.om</string>
+			</array>
+		</config-file>
+		<!-- Payment Pass Provisioning Entitlements -->
+		<config-file parent="com.apple.developer.payment-pass-provisioning" target="*-Debug.plist">
+			<true/>
+		</config-file>
+		<config-file parent="com.apple.developer.payment-pass-provisioning" target="*-Release.plist">
+			<true/>
+		</config-file>
+
+		<podspec>
+            <pods use-frameworks="true">
+                <pod name="d1-libs-debug" options=":path => './Libs/d1-libs-debug', :configurations => ['Debug']"/>
+                <pod name="d1-libs-release" options=":path => './Libs/d1-libs-release', :configurations => ['Release']"/>
+            </pods>
+        </podspec> 
+
+	</platform>
+</plugin>

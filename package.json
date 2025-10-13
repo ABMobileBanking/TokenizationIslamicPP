@@ -1,0 +1,19 @@
+{
+  "name": "TokenizationIslamic",
+  "version": "1.0.0",
+  "description": "This plugin is used for Islamic Tokenization project",
+  "cordova": {
+    "id": "com.ahliislamic.tokenization",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Sasikumar Ashokan",
+  "license": "ISC"
+}
