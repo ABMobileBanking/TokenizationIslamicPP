@@ -1,18 +1,33 @@
-//
-//
-// Copyright © 2022 THALES. All rights reserved.
-//
-    
 
-#import <Foundation/Foundation.h>
+/*----------------------------------------------------------------------------
+ *
+ *     Copyright © 2020-2022 THALES. All Rights Reserved.
+ *
+ * -----------------------------------------------------------------------------
+ * THE SOFTWARE IS PROVIDED “AS IS” AND THALES MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THALES SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+ * MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES TO THE
+ * EXTENT PERMITTED BY LAW.
+ *
+ * THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE
+ * CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE
+ * PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT
+ * NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE
+ * SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE
+ * SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE
+ * PHYSICAL OR ENVIRONMENTAL DAMAGE (HIGH RISK ACTIVITIES). THALES
+ * SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS AND
+ * ANY LIABILITIES TO THE EXTENT PERMITTED BY LAW FOR HIGH RISK ACTIVITIES.
+ * -----------------------------------------------------------------------------
+ */
 
-//! Project version number for SecureLogAPI_Dynamic.
-FOUNDATION_EXPORT double SecureLogAPI_DynamicVersionNumber;
+#ifndef SecureLogAPI_h
+#define SecureLogAPI_h
 
-//! Project version string for SecureLogAPI_Dynamic.
-FOUNDATION_EXPORT const unsigned char SecureLogAPI_DynamicVersionString[];
+#import "SecureLog.h"
+#import "SecureLogConfig.h"
 
-// In this header, you should import all the public headers of your framework using statements like #import <SecureLogAPI_Dynamic/PublicHeader.h>
-
-#import <SecureLogAPI/SecureLog.h>
-#import <SecureLogAPI/SecureLogConfig.h>
+#endif

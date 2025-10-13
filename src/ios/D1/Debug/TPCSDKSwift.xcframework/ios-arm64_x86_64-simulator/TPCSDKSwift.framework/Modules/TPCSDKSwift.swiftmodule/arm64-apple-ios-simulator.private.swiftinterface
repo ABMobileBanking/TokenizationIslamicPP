@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name TPCSDKSwift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import Foundation
 import PassKit
@@ -206,7 +207,8 @@ extension TPCSDKSwift.TPCError : Foundation.LocalizedError {
   @objc final public let nonce: Foundation.Data
   @objc final public let nonceSignature: Foundation.Data
   @objc public var productId: Swift.String?
-  @objc public init(scheme: TPCSDKSwift.CardScheme, encryptedPayload: Swift.String, authorizationCode: Swift.String, certificateChain: [Foundation.Data], nonce: Foundation.Data, nonceSignature: Foundation.Data)
+  @objc final public let auxiliaryScheme: Swift.String?
+  @objc public init(scheme: TPCSDKSwift.CardScheme, encryptedPayload: Swift.String, authorizationCode: Swift.String, certificateChain: [Foundation.Data], nonce: Foundation.Data, nonceSignature: Foundation.Data, auxiliaryScheme: Swift.String? = nil)
   @objc deinit
 }
 @objc public protocol TPCSDKProvisionDelegate : ObjectiveC.NSObjectProtocol {
@@ -257,8 +259,8 @@ extension TPCSDKSwift.TPCError : Foundation.LocalizedError {
   @objc public static func getToken(input: TPCSDKSwift.GetTokenInput, completion: @escaping (_ localPass: PassKit.PKPass?, _ remotePass: PassKit.PKPass?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc @available(*, deprecated, message: "This API is deprecated as it does not provide information about pending activation and Apple Watch status. Please use getToken API instead.")
   public static func isCardDigitized(card: TPCSDKSwift.FundingCard? = nil, primaryAccountIdentifier: Swift.String? = nil, primaryAccountNumberSuffix: Swift.String? = nil, completion: @escaping (_ primaryAccountIdentifier: Swift.String?, _ digitizeResult: TPCSDKSwift.IsCardDigitizedResult, _ error: (any Swift.Error)?) -> Swift.Void)
-  @objc public static func provision(fromController controller: UIKit.UIViewController, primaryAccountSuffix: Swift.String, cardholderName: Swift.String?, scheme: TPCSDKSwift.CardScheme, encryptedPayload: Swift.String, authorizationCode: Swift.String, provisionDelegate: (any TPCSDKSwift.TPCSDKProvisionDelegate)? = nil)
-  @objc public static func provision(fromController controller: UIKit.UIViewController, primaryAccountSuffix: Swift.String, cardholderName: Swift.String?, schemeString: Swift.String, encryptedPayload: Swift.String, authorizationCode: Swift.String, productId: Swift.String? = nil, primaryAccountIdentifier: Swift.String? = nil, provisionDelegate: (any TPCSDKSwift.TPCSDKProvisionDelegate)? = nil)
+  @objc public static func provision(fromController controller: UIKit.UIViewController, primaryAccountSuffix: Swift.String, cardholderName: Swift.String?, scheme: TPCSDKSwift.CardScheme, encryptedPayload: Swift.String, authorizationCode: Swift.String, auxiliaryScheme: Swift.String? = nil, provisionDelegate: (any TPCSDKSwift.TPCSDKProvisionDelegate)? = nil)
+  @objc public static func provision(fromController controller: UIKit.UIViewController, primaryAccountSuffix: Swift.String, cardholderName: Swift.String?, schemeString: Swift.String, encryptedPayload: Swift.String, authorizationCode: Swift.String, productId: Swift.String? = nil, primaryAccountIdentifier: Swift.String? = nil, auxiliaryScheme: Swift.String? = nil, provisionDelegate: (any TPCSDKSwift.TPCSDKProvisionDelegate)? = nil)
   @objc public static func generateAddPaymentPassRequestForInput(_ input: TPCSDKSwift.GenerateAddPaymentPassRequestInput, completion: @escaping (_ addPaymentPassRequest: PassKit.PKAddPaymentPassRequest?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc @available(*, deprecated, message: "This API is deprecated. Please use getToken API with serialNumber instead.")
   public static func getPendingActivationPass(card: TPCSDKSwift.FundingCard, completion: @escaping (_ pendingActivationPass: TPCSDKSwift.PendingActivationPass?, _ error: (any Swift.Error)?) -> Swift.Void)

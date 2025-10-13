@@ -1,4 +1,6 @@
 framework module SecureLogAPI {
-    umbrella header "SecureLogAPI.h"
-    export *
+  umbrella header "SecureLogAPI.h"
+  export *
+
+  module * { export * }
 }

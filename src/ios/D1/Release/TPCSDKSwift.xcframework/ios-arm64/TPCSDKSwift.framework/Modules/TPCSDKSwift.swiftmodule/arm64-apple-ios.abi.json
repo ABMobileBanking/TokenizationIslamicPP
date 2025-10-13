@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TPCSDKSwift",
+    "printedName": "TPCSDKSwift",
     "children": [
       {
         "kind": "Import",
@@ -678,6 +678,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -704,6 +718,26 @@
             "usr": "s:10Foundation14LocalizedErrorP",
             "mangledName": "$s10Foundation14LocalizedErrorP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TPCSDKSwift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CRasp.crasputil_Private",
+        "printedName": "CRasp.crasputil_Private",
+        "declKind": "Import",
+        "moduleName": "TPCSDKSwift",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -889,6 +923,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1183,6 +1231,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1522,6 +1584,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1817,6 +1893,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2068,6 +2158,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2748,6 +2852,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3276,6 +3394,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4248,6 +4380,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4870,6 +5016,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -7094,6 +7254,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7719,6 +7893,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8119,6 +8307,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -8903,6 +9105,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9256,6 +9472,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9685,6 +9915,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10202,9 +10446,76 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "auxiliaryScheme",
+            "printedName": "auxiliaryScheme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TPCSDKSwift@objc(cs)GenerateAddPaymentPassRequestInput(py)auxiliaryScheme",
+            "mangledName": "$s11TPCSDKSwift34GenerateAddPaymentPassRequestInputC15auxiliarySchemeSSSgvp",
+            "moduleName": "TPCSDKSwift",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TPCSDKSwift@objc(cs)GenerateAddPaymentPassRequestInput(im)auxiliaryScheme",
+                "mangledName": "$s11TPCSDKSwift34GenerateAddPaymentPassRequestInputC15auxiliarySchemeSSSgvg",
+                "moduleName": "TPCSDKSwift",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(scheme:encryptedPayload:authorizationCode:certificateChain:nonce:nonceSignature:)",
+            "printedName": "init(scheme:encryptedPayload:authorizationCode:certificateChain:nonce:nonceSignature:auxiliaryScheme:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10255,11 +10566,26 @@
                 "name": "Data",
                 "printedName": "Foundation.Data",
                 "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TPCSDKSwift@objc(cs)GenerateAddPaymentPassRequestInput(im)initWithScheme:encryptedPayload:authorizationCode:certificateChain:nonce:nonceSignature:",
-            "mangledName": "$s11TPCSDKSwift34GenerateAddPaymentPassRequestInputC6scheme16encryptedPayload17authorizationCode16certificateChain5nonce0O9SignatureAcA10CardSchemeO_S2SSay10Foundation4DataVGA2Ntcfc",
+            "usr": "c:@M@TPCSDKSwift@objc(cs)GenerateAddPaymentPassRequestInput(im)initWithScheme:encryptedPayload:authorizationCode:certificateChain:nonce:nonceSignature:auxiliaryScheme:",
+            "mangledName": "$s11TPCSDKSwift34GenerateAddPaymentPassRequestInputC6scheme16encryptedPayload17authorizationCode16certificateChain5nonce0O9Signature15auxiliarySchemeAcA04CardR0O_S2SSay10Foundation4DataVGA2OSSSgtcfc",
             "moduleName": "TPCSDKSwift",
             "declAttributes": [
               "AccessControl",
@@ -10310,6 +10636,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10440,6 +10780,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10976,6 +11332,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11272,6 +11642,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11842,7 +12226,7 @@
           {
             "kind": "Function",
             "name": "provision",
-            "printedName": "provision(fromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:provisionDelegate:)",
+            "printedName": "provision(fromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:auxiliaryScheme:provisionDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11896,6 +12280,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "(any TPCSDKSwift.TPCSDKProvisionDelegate)?",
                 "children": [
                   {
@@ -11910,8 +12309,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:provisionDelegate:",
-            "mangledName": "$s11TPCSDKSwift6TPCSDKC9provision14fromController20primaryAccountSuffix14cardholderName6scheme16encryptedPayload17authorizationCode0C8DelegateySo06UIViewE0C_S2SSgAA10CardSchemeOS2SAA015TPCSDKProvisionP0_pSgtFZ",
+            "usr": "c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:auxiliaryScheme:provisionDelegate:",
+            "mangledName": "$s11TPCSDKSwift6TPCSDKC9provision14fromController20primaryAccountSuffix14cardholderName6scheme16encryptedPayload17authorizationCode15auxiliaryScheme0C8DelegateySo06UIViewE0C_S2SSgAA04CardQ0OS2SAoA015TPCSDKProvisionR0_pSgtFZ",
             "moduleName": "TPCSDKSwift",
             "static": true,
             "declAttributes": [
@@ -11925,7 +12324,7 @@
           {
             "kind": "Function",
             "name": "provision",
-            "printedName": "provision(fromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:provisionDelegate:)",
+            "printedName": "provision(fromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:auxiliaryScheme:provisionDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12009,6 +12408,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "(any TPCSDKSwift.TPCSDKProvisionDelegate)?",
                 "children": [
                   {
@@ -12023,8 +12437,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:provisionDelegate:",
-            "mangledName": "$s11TPCSDKSwift6TPCSDKC9provision14fromController20primaryAccountSuffix14cardholderName12schemeString16encryptedPayload17authorizationCode9productId0fG10Identifier0C8DelegateySo06UIViewE0C_S2SSgS3SA2pA015TPCSDKProvisionT0_pSgtFZ",
+            "usr": "c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:auxiliaryScheme:provisionDelegate:",
+            "mangledName": "$s11TPCSDKSwift6TPCSDKC9provision14fromController20primaryAccountSuffix14cardholderName12schemeString16encryptedPayload17authorizationCode9productId0fG10Identifier15auxiliaryScheme0C8DelegateySo06UIViewE0C_S2SSgS3SA3qA015TPCSDKProvisionV0_pSgtFZ",
             "moduleName": "TPCSDKSwift",
             "static": true,
             "declAttributes": [
@@ -13358,6 +13772,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13412,648 +13840,319 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Data\/RestClient.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Data\/RestClient.swift",
       "kind": "IntegerLiteral",
       "offset": 5634,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/TPCError.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/TPCError.swift",
       "kind": "Dictionary",
       "offset": 1184,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 234,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 943,
       "length": 20,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1479,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 943,
-      "length": 20,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1479,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1978,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2018,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2058,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2094,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1978,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2018,
-      "length": 12,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2058,
-      "length": 4,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2094,
-      "length": 8,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2754,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2791,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 2827,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2754,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2791,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2827,
-      "length": 6,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 3359,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 3389,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3359,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Enums\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3389,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 596,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 630,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 675,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 718,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 748,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 808,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 837,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 867,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 895,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 939,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 977,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
       "kind": "IntegerLiteral",
       "offset": 1016,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 630,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 675,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 718,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 748,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 774,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 808,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 837,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 867,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 895,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 939,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 977,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1016,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 630,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 675,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 718,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 748,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 774,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 808,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 837,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 867,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 895,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 939,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 977,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Internal\/Api.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1016,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/FundingCard.swift",
-      "kind": "StringLiteral",
-      "offset": 1151,
-      "length": 11,
-      "value": "\"TPCSDKSwift.FundingCard\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "IntegerLiteral",
       "offset": 149,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "BooleanLiteral",
       "offset": 1700,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "IntegerLiteral",
       "offset": 2289,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "IntegerLiteral",
       "offset": 2345,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "IntegerLiteral",
       "offset": 4327,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Api+Models.swift",
       "kind": "IntegerLiteral",
       "offset": 4383,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Extensions\/PKPassLibrary+Ext.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Extensions\/PKPassLibrary+Ext.swift",
       "kind": "IntegerLiteral",
       "offset": 309,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Extensions\/PKPassLibrary+Ext.swift",
-      "kind": "IntegerLiteral",
-      "offset": 309,
-      "length": 12,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Extensions\/PKPassLibrary+Ext.swift",
-      "kind": "IntegerLiteral",
-      "offset": 309,
-      "length": 12,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 223,
       "length": 142,
       "value": "[0x30, 0x81, 0x9F, 0x30, 0x0D, 0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x81, 0x8D, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 434,
       "length": 154,
       "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 657,
       "length": 154,
       "value": "[0x30, 0x82, 0x01, 0xA2, 0x30, 0x0D, 0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x8F, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 880,
       "length": 154,
       "value": "[0x30, 0x82, 0x02, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x02, 0x0f, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 1120,
       "length": 170,
       "value": "[0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x08, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x03, 0x01, 0x07, 0x03, 0x42, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/subrepo\/sectrans-ios-certpin\/dev\/main\/CCertificatePinningSwift\/CCertificatePinningSwift\/Public\/SecTrust+CertificatePinning.swift",
       "kind": "Array",
       "offset": 1376,
       "length": 148,
       "value": "[0x30, 0x76, 0x30, 0x10, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x05, 0x2b, 0x81, 0x04, 0x00, 0x22, 0x03, 0x62, 0x00]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/CardDigitizationResult.swift",
-      "kind": "StringLiteral",
-      "offset": 230,
-      "length": 22,
-      "value": "\"TPCSDKSwift.CardDigitizationResult\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/GenerateAddPaymentPassRequestInput.swift",
-      "kind": "StringLiteral",
-      "offset": 213,
-      "length": 34,
-      "value": "\"TPCSDKSwift.GenerateAddPaymentPassRequestInput\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Security\/Certificates.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Security\/Certificates.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 1610,
       "value": "\"MIIEsTCCA5mgAwIBAgIQBOHnpNxc8vNtwCtCuF0VnzANBgkqhkiG9w0BAQsFADBsMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5jZSBFViBSb290IENBMB4XDTEzMTAyMjEyMDAwMFoXDTI4MTAyMjEyMDAwMFowcDELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEvMC0GA1UEAxMmRGlnaUNlcnQgU0hBMiBIaWdoIEFzc3VyYW5jZSBTZXJ2ZXIgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC24C\/CJAbIbQRf1+8KZAayfSImZRauQkCbztyfn3YHPsMwVYcZuU+UDlqUH1VWtMICKq\/QmO4LQNfE0DtyyBSe75CxEamu0si4QzrZCwvV1ZX1QK\/IHe1NnF9Xt4ZQaJn1itrSxwUfqJfJ3KSxgoQtxq2lnMcZgqaFD15EWCo3j\/018QsIJzJa9buLnqS9UdAn4t07QjOjBSjEuyjMmqwrIw14xnvmXnG3Sj4I+4G3FhahnSMSTeXXkgisdaScus0Xsh5ENWV\/UyU50RwKmmMbGZJ0aAo3wsJSSMs5WqK24V3B3aAguCGikyZvFEohQcftbZvySC\/zA\/WiaJJTL17jAgMBAAGjggFJMIIBRTASBgNVHRMBAf8ECDAGAQH\/AgEAMA4GA1UdDwEB\/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wSwYDVR0fBEQwQjBAoD6gPIY6aHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0SGlnaEFzc3VyYW5jZUVWUm9vdENBLmNybDA9BgNVHSAENjA0MDIGBFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAdBgNVHQ4EFgQUUWj\/kK8CB3U8zNllZGKiErhZcjswHwYDVR0jBBgwFoAUsT7DaQP4v0cB1JgmGggC72NkK8MwDQYJKoZIhvcNAQELBQADggEBABiKlYkD5m3fXPwdaOpKj4PWUS+Na0QWnqxj9dJubISZi6qBcYRb7TROsLd5kinMLYBq8I4g4Xmk\/gNHE+r1hspZcX30BJZr01lYPf7TMSVcGDiEo+afgv2MW5gxTs14nhr9hctJqvIni5ly\/D6q1UEL2tU2ob8cbkdJf17ZSHwD2f2LSaCYJkJA69aSEaRkCldUxPUd1gJea6zuxICaEnL6VpPX\/78whQYwvwt\/Tv9XBZ0k7YXDK\/umdaisLRbvfXknsuvCnQsH6qqF0wGjIChBWUMo0oHjqvbsezt3tkBigAVBRQHvFwY+3sAzm2fTYS5yh+Rp\/BIAV0AecPUeybQ=\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Security\/Certificates.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Security\/Certificates.swift",
       "kind": "StringLiteral",
       "offset": 1784,
       "length": 1294,
       "value": "\"MIIDxTCCAq2gAwIBAgIQAqxcJmoLQJuPC3nyrkYldzANBgkqhkiG9w0BAQUFADBsMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5jZSBFViBSb290IENBMB4XDTA2MTExMDAwMDAwMFoXDTMxMTExMDAwMDAwMFowbDELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTErMCkGA1UEAxMiRGlnaUNlcnQgSGlnaCBBc3N1cmFuY2UgRVYgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMbM5XPm+9S75S0tMqbf5YE\/yc0lSbZxKsPVlDRnogocsF9ppkCxxLeyj9CYpKlBWTrT3JTWPNt0OKRKzE0lgvdKpVMSOO7zSW1xkX5jtqumX8OkhPhPYlG++MXs2ziS4wblCJEMxChBVfvLWokVfnHoNb9Ncgk9vjo4UFt3MRuNs8ckRZqnrG0AFFoEt7oT61EKmEFBIk5lYYeBQVCmeVyJ3hlKV9Uu5l0cUyx+mM0aBhakaHPQNAQTXKFx01p8VdteZOE3hzBWBOURtCmAEvF5OYiiAhF8J2a3iLd48soKqDirCmTCv2ZdlYTBoSUeh10aUAsgEsxBu24LUTi4S8sCAwEAAaNjMGEwDgYDVR0PAQH\/BAQDAgGGMA8GA1UdEwEB\/wQFMAMBAf8wHQYDVR0OBBYEFLE+w2kD+L9HAdSYJhoIAu9jZCvDMB8GA1UdIwQYMBaAFLE+w2kD+L9HAdSYJhoIAu9jZCvDMA0GCSqGSIb3DQEBBQUAA4IBAQAcGgaX3NecnzyIZgYIVyHbIUf4KmeqvxgydkAQV8GK83rZEWWONfqe\/EW1ntlMMUu4kehDLI6zeM7b41N5cdblIZQB2lWHmiRk9opmzN6cN82oNLFpmyPInngiK3BD41VHMWEZ71jFhS9OMPagMRYjyOfiZRYzy78aG6A9+MpeizGLYAiJLQwGXFK3xPkKmNEVX58Svnw2Yzi9RKR\/5CYrCsSXaQ3pjOLAEFe4yHYSkVXySGnYvCoCWw9E1CAx2\/S6cCZdkGCevEsXCS+0yx5DaMkHJ8HSXPfqIbloEpw8nL+e\/IBcm2PN7EeqJSdnoDfzAIJ9VNep+OkuE6N36B9K\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/dependencies\/CRasp\/binary\/no-bitcode\/fixup\/Release\/CRaspUtil.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1256,
-      "length": 13,
-      "value": "1"
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Click2PayUserDetails.swift",
+      "kind": "Array",
+      "offset": 4701,
+      "length": 2,
+      "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/dependencies\/CRasp\/binary\/no-bitcode\/fixup\/Release\/CRaspUtil.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1256,
-      "length": 13,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/dependencies\/CRasp\/binary\/no-bitcode\/fixup\/Release\/CRaspUtil.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1256,
-      "length": 13,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/Click2PayUserDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 20,
-      "value": "\"TPCSDKSwift.Click2PayUserDetails\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/Models\/GetTokenInput.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 13,
-      "value": "\"TPCSDKSwift.GetTokenInput\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/TPCSDK.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/wzX1t-rPJ\/0\/bps\/dme\/project\/tpc\/ios\/TPCSDK\/TPCSDK\/TPCSDK.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 7,
-      "value": "\"2.6.0\""
+      "value": "\"2.7.0\""
     }
   ]
 }

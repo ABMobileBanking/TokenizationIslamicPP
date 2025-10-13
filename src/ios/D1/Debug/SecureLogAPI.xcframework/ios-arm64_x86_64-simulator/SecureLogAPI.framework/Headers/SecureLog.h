@@ -1,14 +1,15 @@
-/* -----------------------------------------------------------------------------
+/*----------------------------------------------------------------------------
  *
- *     Copyright (c) 2020  -  THALES DEVELOPMENT - R&D
+ *     Copyright © 2020-2022 THALES. All Rights Reserved.
  *
  * -----------------------------------------------------------------------------
- * THALES MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF
- * THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
- * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
- * PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THALES SHALL NOT BE
+ * THE SOFTWARE IS PROVIDED “AS IS” AND THALES MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THALES SHALL NOT BE
  * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
- * MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ * MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES TO THE
+ * EXTENT PERMITTED BY LAW.
  *
  * THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE
  * CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE
@@ -17,9 +18,8 @@
  * SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE
  * SOFTWARE COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE
  * PHYSICAL OR ENVIRONMENTAL DAMAGE ("HIGH RISK ACTIVITIES"). THALES
- * SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR
- * HIGH RISK ACTIVITIES.
- *
+ * SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS AND
+ * ANY LIABILITIES TO THE EXTENT PERMITTED BY LAW FOR HIGH RISK ACTIVITIES.
  * -----------------------------------------------------------------------------
  */
 
@@ -27,7 +27,7 @@
 #define SecureLogAPI_SecureLog_h
 
 #import <Foundation/Foundation.h>
-#import <SecureLogAPI/SecureLogConfig.h>
+#import "SecureLogConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,19 +43,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- * Set the secure log level to write in log file.
+ * @brief Set the secure log level to write in log file.
  * @param logLevel log level.
 */
 - (void)setLevel:(SecureLogLevel)logLevel;
 
 /**
- * Return array of log files that logged by secure log.
+ * @brief Return array of log files that logged by secure log.
  * @return array of log files.
 */
 - (NSArray<NSURL *> *)files;
 
 /**
- * Delete all logs that logged by secure log.
+ * @brief Delete all logs that logged by secure log.
  *
 */
 - (void)deleteFiles;

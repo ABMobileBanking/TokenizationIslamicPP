@@ -1,9 +1,36 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "D1",
+    "printedName": "D1",
     "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "D1",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "D1"
+      },
+      {
+        "kind": "Import",
+        "name": "CRasp.crasputil_Private",
+        "printedName": "CRasp.crasputil_Private",
+        "declKind": "Import",
+        "moduleName": "D1",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
       {
         "kind": "Import",
         "name": "Foundation",
@@ -192,6 +219,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -911,6 +952,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1260,6 +1315,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1562,6 +1631,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -1728,6 +1811,32 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "D1",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1875,6 +1984,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1900,7 +2025,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(cardID:cardArt:productTitle:)",
+                "printedName": "init(cardID:cardArt:productTitle:last4:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1925,11 +2050,26 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:2D112ConfigParamsV04CardC0V6cardID0E3Art12productTitleAESS_So7UIImageCSStcfc",
-                "mangledName": "$s2D112ConfigParamsV04CardC0V6cardID0E3Art12productTitleAESS_So7UIImageCSStcfc",
+                "usr": "s:2D112ConfigParamsV04CardC0V6cardID0E3Art12productTitle5last4AESS_So7UIImageCS2SSgtcfc",
+                "mangledName": "$s2D112ConfigParamsV04CardC0V6cardID0E3Art12productTitle5last4AESS_So7UIImageCS2SSgtcfc",
                 "moduleName": "D1",
                 "declAttributes": [
                   "AccessControl",
@@ -2043,6 +2183,20 @@
               "RawDocComment"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Hashable",
@@ -2262,6 +2416,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -2405,6 +2573,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2706,6 +2890,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2951,6 +3151,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3156,6 +3372,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3338,6 +3570,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3500,6 +3746,46 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "amex",
+            "printedName": "amex",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(D1.CardScheme.Type) -> D1.CardScheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardScheme",
+                    "printedName": "D1.CardScheme",
+                    "usr": "s:2D110CardSchemeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "D1.CardScheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardScheme",
+                        "printedName": "D1.CardScheme",
+                        "usr": "s:2D110CardSchemeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:2D110CardSchemeO4amexyA2CmF",
+            "mangledName": "$s2D110CardSchemeO4amexyA2CmF",
+            "moduleName": "D1",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -3582,6 +3868,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3950,6 +4250,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4209,6 +4523,9 @@
             "moduleName": "D1",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4251,6 +4568,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4527,6 +4858,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5195,6 +5540,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5440,6 +5801,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5462,6 +5837,33 @@
         "moduleName": "D1",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "D1",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "D1Core",
+        "printedName": "D1Core",
+        "declKind": "Import",
+        "moduleName": "D1"
+      },
+      {
+        "kind": "Import",
+        "name": "CRasp.crasputil_Private",
+        "printedName": "CRasp.crasputil_Private",
+        "declKind": "Import",
+        "moduleName": "D1",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -6942,6 +7344,9 @@
                 "moduleName": "D1",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
                 "accessors": [
                   {
                     "kind": "Accessor",
@@ -6984,6 +7389,20 @@
             ],
             "enumRawTypeName": "Int",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -7166,6 +7585,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -7386,6 +7819,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8234,6 +8683,22 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -9822,7 +10287,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -9867,6 +10348,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SecureLogAPI",
+        "printedName": "SecureLogAPI",
+        "declKind": "Import",
+        "moduleName": "D1"
       },
       {
         "kind": "TypeDecl",
@@ -9953,7 +10441,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -10339,6 +10843,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10772,6 +11290,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -10870,6 +11404,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -10910,6 +11460,20 @@
         "kind": "Import",
         "name": "D1Core",
         "printedName": "D1Core",
+        "declKind": "Import",
+        "moduleName": "D1"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "D1"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
         "declKind": "Import",
         "moduleName": "D1"
       },
@@ -10995,17 +11559,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@D1@objc(cs)D1DisplayTextField(im)insecureCopyToClipboard",
+            "usr": "s:2D10A16DisplayTextFieldC23insecureCopyToClipboardyyF",
             "mangledName": "$s2D10A16DisplayTextFieldC23insecureCopyToClipboardyyF",
             "moduleName": "D1",
             "overriding": true,
-            "objc_name": "insecureCopyToClipboard",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
+              "Preconcurrency",
               "Custom",
-              "AccessControl",
               "Override",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -11033,54 +11595,14 @@
             "mangledName": "$s2D10A16DisplayTextFieldC5frameACSo6CGRectV_tcfc",
             "moduleName": "D1",
             "overriding": true,
-            "implicit": true,
             "objc_name": "initWithFrame:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "D1.D1DisplayTextField?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "D1DisplayTextField",
-                    "printedName": "D1.D1DisplayTextField",
-                    "usr": "c:@M@D1@objc(cs)D1DisplayTextField"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@D1@objc(cs)D1DisplayTextField(im)initWithCoder:",
-            "mangledName": "$s2D10A16DisplayTextFieldC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "D1",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
+              "Override",
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
@@ -11090,15 +11612,17 @@
         "mangledName": "$s2D10A16DisplayTextFieldC",
         "moduleName": "D1",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)D1CDisplayTextField",
+        "superclassUsr": "c:@M@D1Core@objc(cs)DisplayTextField",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "D1Core.D1CDisplayTextField",
+          "D1Core.DisplayTextField",
           "UIKit.UITextField",
           "UIKit.UIControl",
           "UIKit.UIView",
@@ -11106,6 +11630,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11317,8 +11855,8 @@
           },
           {
             "kind": "Var",
-            "name": "date",
-            "printedName": "date",
+            "name": "transactionDate",
+            "printedName": "transactionDate",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11328,8 +11866,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:2D121CardTransactionRecordC4dateSSvp",
-            "mangledName": "$s2D121CardTransactionRecordC4dateSSvp",
+            "usr": "s:2D121CardTransactionRecordC15transactionDateSSvp",
+            "mangledName": "$s2D121CardTransactionRecordC15transactionDateSSvp",
             "moduleName": "D1",
             "declAttributes": [
               "Final",
@@ -11353,8 +11891,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:2D121CardTransactionRecordC4dateSSvg",
-                "mangledName": "$s2D121CardTransactionRecordC4dateSSvg",
+                "usr": "s:2D121CardTransactionRecordC15transactionDateSSvg",
+                "mangledName": "$s2D121CardTransactionRecordC15transactionDateSSvg",
                 "moduleName": "D1",
                 "implicit": true,
                 "declAttributes": [
@@ -12809,7 +13347,23 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -12923,7 +13477,23 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -13173,6 +13743,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -13501,6 +14085,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -13707,6 +14305,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -13752,7 +14364,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -13972,6 +14600,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -14579,7 +15223,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -14759,6 +15419,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14967,6 +15641,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15025,7 +15713,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -15403,6 +16107,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -15973,6 +16693,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -16095,6 +16831,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -16196,7 +16948,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -16431,6 +17199,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -16510,6 +17292,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -16536,13 +17334,14 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:2D116ChangePINOptionsC9pinLengthACSi_tcfc",
-            "mangledName": "$s2D116ChangePINOptionsC9pinLengthACSi_tcfc",
+            "usr": "s:2D116ChangePINOptionsC9pinLengthACSi_tKcfc",
+            "mangledName": "$s2D116ChangePINOptionsC9pinLengthACSi_tKcfc",
             "moduleName": "D1",
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -16553,6 +17352,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -16746,6 +17561,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -16954,7 +17785,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -18004,7 +18851,23 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -18949,6 +19812,9 @@
                 "moduleName": "D1",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
                 "accessors": [
                   {
                     "kind": "Accessor",
@@ -18992,6 +19858,20 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -19333,7 +20213,23 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -19344,7 +20240,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -20637,7 +21549,23 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -20954,7 +21882,23 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -21139,6 +22083,9 @@
                 "moduleName": "D1",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
                 "accessors": [
                   {
                     "kind": "Accessor",
@@ -21182,6 +22129,20 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -21259,7 +22220,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -21523,7 +22500,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -21594,54 +22587,14 @@
             "mangledName": "$s2D10A19PINDisplayTextFieldC5frameACSo6CGRectV_tcfc",
             "moduleName": "D1",
             "overriding": true,
-            "implicit": true,
             "objc_name": "initWithFrame:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "D1.D1PINDisplayTextField?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "D1PINDisplayTextField",
-                    "printedName": "D1.D1PINDisplayTextField",
-                    "usr": "c:@M@D1@objc(cs)D1PINDisplayTextField"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@D1@objc(cs)D1PINDisplayTextField(im)initWithCoder:",
-            "mangledName": "$s2D10A19PINDisplayTextFieldC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "D1",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
+              "Override",
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
@@ -21651,15 +22604,17 @@
         "mangledName": "$s2D10A19PINDisplayTextFieldC",
         "moduleName": "D1",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)D1CPinDisplayTextField",
+        "superclassUsr": "c:@M@D1Core@objc(cs)PinDisplayTextField",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "D1Core.D1CPinDisplayTextField",
+          "D1Core.PinDisplayTextField",
           "UIKit.UITextField",
           "UIKit.UIControl",
           "UIKit.UIView",
@@ -21667,6 +22622,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21804,54 +22773,14 @@
             "mangledName": "$s2D10A15SecureTextFieldC5frameACSo6CGRectV_tcfc",
             "moduleName": "D1",
             "overriding": true,
-            "implicit": true,
             "objc_name": "initWithFrame:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "D1.D1SecureTextField?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "D1SecureTextField",
-                    "printedName": "D1.D1SecureTextField",
-                    "usr": "c:@M@D1@objc(cs)D1SecureTextField"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@D1@objc(cs)D1SecureTextField(im)initWithCoder:",
-            "mangledName": "$s2D10A15SecureTextFieldC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "D1",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
+              "Override",
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
@@ -21861,15 +22790,17 @@
         "mangledName": "$s2D10A15SecureTextFieldC",
         "moduleName": "D1",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)D1CSecureTextField",
+        "superclassUsr": "c:@M@D1Core@objc(cs)SecureTextField",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "D1Core.D1CSecureTextField",
+          "D1Core.SecureTextField",
           "UIKit.UITextField",
           "UIKit.UIControl",
           "UIKit.UIView",
@@ -21877,6 +22808,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22880,6 +23825,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -22904,6 +23865,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -23700,6 +24675,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -23784,1596 +24773,1666 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 9,
       "value": "\"RENEWAL\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 240,
-      "length": 6,
-      "value": "\"NONE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
-      "length": 9,
-      "value": "\"RENEWAL\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 533,
       "length": 16,
       "value": "\"CLOSED_ACCOUNT\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 13,
       "value": "\"CLOSED_CARD\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 654,
       "length": 11,
       "value": "\"CARD_LOST\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 12,
       "value": "\"CARD_FOUND\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 13,
       "value": "\"CARD_STOLEN\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 832,
       "length": 13,
       "value": "\"CARD_BROKEN\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 19,
       "value": "\"CARD_NOT_RECEIVED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 983,
       "length": 7,
       "value": "\"FRAUD\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 1043,
       "length": 15,
       "value": "\"USER_DECISION\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 17,
       "value": "\"ISSUER_DECISION\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 1178,
       "length": 12,
       "value": "\"PIN_LOCKED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 13,
       "value": "\"CVV2_LOCKED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
       "kind": "StringLiteral",
       "offset": 1311,
       "length": 20,
       "value": "\"EXPIRY_DATE_LOCKED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 473,
-      "length": 6,
-      "value": "\"NONE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 533,
-      "length": 16,
-      "value": "\"CLOSED_ACCOUNT\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 597,
-      "length": 13,
-      "value": "\"CLOSED_CARD\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 654,
-      "length": 11,
-      "value": "\"CARD_LOST\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 711,
-      "length": 12,
-      "value": "\"CARD_FOUND\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 771,
-      "length": 13,
-      "value": "\"CARD_STOLEN\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 832,
-      "length": 13,
-      "value": "\"CARD_BROKEN\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 904,
-      "length": 19,
-      "value": "\"CARD_NOT_RECEIVED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 983,
-      "length": 7,
-      "value": "\"FRAUD\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 1043,
-      "length": 15,
-      "value": "\"USER_DECISION\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 1115,
-      "length": 17,
-      "value": "\"ISSUER_DECISION\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 1178,
-      "length": 12,
-      "value": "\"PIN_LOCKED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 1237,
-      "length": 13,
-      "value": "\"CVV2_LOCKED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnumsCaaS.swift",
-      "kind": "StringLiteral",
-      "offset": 1311,
-      "length": 20,
-      "value": "\"EXPIRY_DATE_LOCKED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/internal\/common\/D1Operation.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/common\/D1Operation.swift",
       "kind": "BooleanLiteral",
       "offset": 196,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/internal\/common\/D1Operation.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/common\/D1Operation.swift",
       "kind": "BooleanLiteral",
       "offset": 231,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/PushResponse.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/common\/D1Operation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1357,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/PushResponse.swift",
       "kind": "StringLiteral",
       "offset": 947,
       "length": 3,
       "value": "\"0\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/PushResponse.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/PushResponse.swift",
       "kind": "StringLiteral",
       "offset": 1036,
       "length": 3,
       "value": "\"4\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/PushResponse.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/PushResponse.swift",
       "kind": "StringLiteral",
       "offset": 1186,
       "length": 3,
       "value": "\"5\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
       "kind": "StringLiteral",
-      "offset": 481,
+      "offset": 188,
+      "length": 8,
+      "value": "\"GayT45\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 8,
+      "value": "\"XgGF88\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 8,
+      "value": "\"iudr79\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 8,
+      "value": "\"faRr57\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 8,
+      "value": "\"AljQ00\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 385,
+      "length": 8,
+      "value": "\"KoEg19\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 8,
+      "value": "\"sULi74\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 468,
+      "length": 8,
+      "value": "\"xgLH13\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 8,
+      "value": "\"NGdQ76\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 8,
+      "value": "\"jenb79\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 8,
+      "value": "\"oGIz40\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 626,
+      "length": 8,
+      "value": "\"PBdI66\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 696,
+      "length": 8,
+      "value": "\"KLfk64\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 8,
+      "value": "\"LTQm50\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 768,
+      "length": 8,
+      "value": "\"LNBZ18\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 812,
+      "length": 8,
+      "value": "\"dydq81\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 845,
+      "length": 8,
+      "value": "\"ayKn73\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 8,
+      "value": "\"QJUb53\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 8,
+      "value": "\"pAxP47\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 954,
+      "length": 8,
+      "value": "\"MaJW92\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1036,
+      "length": 8,
+      "value": "\"eBQC85\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1073,
+      "length": 8,
+      "value": "\"JLAh34\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 8,
+      "value": "\"raAL45\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 8,
+      "value": "\"lbqm43\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1203,
+      "length": 8,
+      "value": "\"DEmI36\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1243,
+      "length": 8,
+      "value": "\"xSzL10\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 8,
+      "value": "\"EgXD39\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1331,
+      "length": 8,
+      "value": "\"AodI62\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1373,
+      "length": 8,
+      "value": "\"bFdS13\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1440,
+      "length": 8,
+      "value": "\"XCJp79\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1469,
+      "length": 8,
+      "value": "\"xEfz34\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1507,
+      "length": 8,
+      "value": "\"ynTs19\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1542,
+      "length": 8,
+      "value": "\"imDF15\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1571,
+      "length": 8,
+      "value": "\"SQUV43\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1607,
+      "length": 8,
+      "value": "\"mZii68\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1638,
+      "length": 8,
+      "value": "\"mXAP95\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1676,
+      "length": 8,
+      "value": "\"IstB65\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1708,
+      "length": 8,
+      "value": "\"hyKy19\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1747,
+      "length": 8,
+      "value": "\"poAs70\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1802,
+      "length": 8,
+      "value": "\"IAAj88\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 8,
+      "value": "\"VNBr23\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1911,
+      "length": 8,
+      "value": "\"XjSG26\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 1965,
+      "length": 8,
+      "value": "\"hTaO82\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2020,
+      "length": 8,
+      "value": "\"uqxv57\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2073,
+      "length": 8,
+      "value": "\"iDsm32\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2124,
+      "length": 8,
+      "value": "\"NTUj03\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2173,
+      "length": 8,
+      "value": "\"JLKf77\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2222,
+      "length": 8,
+      "value": "\"ArpG93\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2269,
+      "length": 8,
+      "value": "\"OdyK85\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2322,
+      "length": 8,
+      "value": "\"IjTM85\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2373,
+      "length": 8,
+      "value": "\"KWka28\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2426,
+      "length": 8,
+      "value": "\"KFKV72\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2477,
+      "length": 8,
+      "value": "\"WrjG48\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2526,
+      "length": 8,
+      "value": "\"Pspk56\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2573,
+      "length": 8,
+      "value": "\"SuQQ35\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2625,
+      "length": 8,
+      "value": "\"Lgrg94\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2694,
+      "length": 8,
+      "value": "\"dFYh20\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2724,
+      "length": 8,
+      "value": "\"ISMr51\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2756,
+      "length": 8,
+      "value": "\"cfsJ66\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2785,
+      "length": 8,
+      "value": "\"DVEm24\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2819,
+      "length": 8,
+      "value": "\"bbpT71\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2850,
+      "length": 8,
+      "value": "\"Crem86\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2911,
+      "length": 8,
+      "value": "\"JUBP62\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2941,
+      "length": 8,
+      "value": "\"SdQN17\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 2974,
+      "length": 8,
+      "value": "\"qlJj23\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3011,
+      "length": 8,
+      "value": "\"wdze76\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3053,
+      "length": 8,
+      "value": "\"xwOw64\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3096,
+      "length": 8,
+      "value": "\"CRFU28\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3131,
+      "length": 8,
+      "value": "\"nhrr47\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3169,
+      "length": 8,
+      "value": "\"TGbK66\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3206,
+      "length": 8,
+      "value": "\"Faor44\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3239,
+      "length": 8,
+      "value": "\"AJNr61\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3278,
+      "length": 8,
+      "value": "\"ivqf80\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3313,
+      "length": 8,
+      "value": "\"uOIA19\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3354,
+      "length": 8,
+      "value": "\"Rpdg77\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3392,
+      "length": 8,
+      "value": "\"tQor89\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3426,
+      "length": 8,
+      "value": "\"dQlO34\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3466,
+      "length": 8,
+      "value": "\"Porm36\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3503,
+      "length": 8,
+      "value": "\"DVtb69\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3536,
+      "length": 8,
+      "value": "\"HmOg74\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3575,
+      "length": 8,
+      "value": "\"wPmD02\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3615,
+      "length": 8,
+      "value": "\"icez15\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3662,
+      "length": 8,
+      "value": "\"CtHn34\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3703,
+      "length": 8,
+      "value": "\"GWjx85\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3747,
+      "length": 8,
+      "value": "\"RMGj47\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3784,
+      "length": 8,
+      "value": "\"Evoq93\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3824,
+      "length": 8,
+      "value": "\"xQQJ39\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3867,
+      "length": 8,
+      "value": "\"kDkk21\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3903,
+      "length": 8,
+      "value": "\"ymBY84\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3945,
+      "length": 8,
+      "value": "\"ztFg85\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 3984,
+      "length": 8,
+      "value": "\"CTfi10\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4019,
+      "length": 8,
+      "value": "\"CIkB44\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4062,
+      "length": 8,
+      "value": "\"uroO29\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4102,
+      "length": 8,
+      "value": "\"iWQJ34\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4146,
+      "length": 8,
+      "value": "\"Hize72\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4193,
+      "length": 8,
+      "value": "\"kXBb61\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4257,
+      "length": 8,
+      "value": "\"rsXP55\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4285,
+      "length": 8,
+      "value": "\"CRZK02\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4310,
+      "length": 8,
+      "value": "\"fBHo31\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4347,
+      "length": 8,
+      "value": "\"wjwA87\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4381,
+      "length": 8,
+      "value": "\"TVAv82\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4456,
+      "length": 8,
+      "value": "\"APcF27\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4493,
+      "length": 8,
+      "value": "\"eFeB03\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4532,
+      "length": 8,
+      "value": "\"YpBg31\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4568,
+      "length": 8,
+      "value": "\"Qwin69\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4612,
+      "length": 8,
+      "value": "\"AwVL84\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4658,
+      "length": 8,
+      "value": "\"nEXY40\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4701,
+      "length": 8,
+      "value": "\"vEvd62\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4741,
+      "length": 8,
+      "value": "\"UjAs71\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4783,
+      "length": 8,
+      "value": "\"NJTT00\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4823,
+      "length": 8,
+      "value": "\"gExM04\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4859,
+      "length": 8,
+      "value": "\"mSlz29\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4892,
+      "length": 8,
+      "value": "\"LZFe09\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4931,
+      "length": 8,
+      "value": "\"RYum94\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 4967,
+      "length": 8,
+      "value": "\"WXXi06\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5005,
+      "length": 8,
+      "value": "\"aVGA64\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5040,
+      "length": 8,
+      "value": "\"VeWL48\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5079,
+      "length": 8,
+      "value": "\"RZHp69\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5115,
+      "length": 8,
+      "value": "\"CAsL24\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5158,
+      "length": 8,
+      "value": "\"BBqr79\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/SecureLog\/generatedFile.swift",
+      "kind": "StringLiteral",
+      "offset": 5199,
+      "length": 8,
+      "value": "\"zxIq92\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
       "length": 6,
       "value": "\"VISA\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
       "kind": "StringLiteral",
-      "offset": 542,
+      "offset": 548,
       "length": 12,
       "value": "\"MASTERCARD\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
       "kind": "StringLiteral",
-      "offset": 636,
+      "offset": 642,
       "length": 14,
       "value": "\"PAGOBANCOMAT\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 6,
+      "value": "\"AMEX\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 900,
+      "length": 8,
+      "value": "\"ACTIVE\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1022,
+      "length": 10,
+      "value": "\"INACTIVE\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1123,
+      "length": 9,
+      "value": "\"EXPIRED\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1217,
+      "length": 9,
+      "value": "\"DELETED\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
+      "length": 10,
+      "value": "\"REPLACED\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1485,
+      "length": 13,
+      "value": "\"PENDING_IDV\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1677,
+      "length": 17,
+      "value": "\"application\/pdf\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 11,
+      "value": "\"image\/png\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 1908,
+      "length": 15,
+      "value": "\"image\/svg+xml\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 2124,
+      "length": 8,
+      "value": "\"Resume\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 2199,
+      "length": 9,
+      "value": "\"Suspend\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/CardEnums.swift",
+      "kind": "StringLiteral",
+      "offset": 2273,
+      "length": 8,
+      "value": "\"Delete\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/internal\/rasp\/Rasp.swift",
       "kind": "StringLiteral",
       "offset": 481,
-      "length": 6,
-      "value": "\"VISA\""
+      "length": 20,
+      "value": "\"D1CRaspErrorDomain\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 542,
-      "length": 12,
-      "value": "\"MASTERCARD\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 636,
-      "length": 14,
-      "value": "\"PAGOBANCOMAT\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 826,
-      "length": 8,
-      "value": "\"ACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 948,
-      "length": 10,
-      "value": "\"INACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1049,
-      "length": 9,
-      "value": "\"EXPIRED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1143,
-      "length": 9,
-      "value": "\"DELETED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1288,
-      "length": 10,
-      "value": "\"REPLACED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1411,
-      "length": 13,
-      "value": "\"PENDING_IDV\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 826,
-      "length": 8,
-      "value": "\"ACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 948,
-      "length": 10,
-      "value": "\"INACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1049,
-      "length": 9,
-      "value": "\"EXPIRED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1143,
-      "length": 9,
-      "value": "\"DELETED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1288,
-      "length": 10,
-      "value": "\"REPLACED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1411,
-      "length": 13,
-      "value": "\"PENDING_IDV\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1603,
-      "length": 17,
-      "value": "\"application\/pdf\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1759,
-      "length": 11,
-      "value": "\"image\/png\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1834,
-      "length": 15,
-      "value": "\"image\/svg+xml\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1603,
-      "length": 17,
-      "value": "\"application\/pdf\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1759,
-      "length": 11,
-      "value": "\"image\/png\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 1834,
-      "length": 15,
-      "value": "\"image\/svg+xml\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2050,
-      "length": 8,
-      "value": "\"Resume\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2125,
-      "length": 9,
-      "value": "\"Suspend\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2199,
-      "length": 8,
-      "value": "\"Delete\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2050,
-      "length": 8,
-      "value": "\"Resume\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2125,
-      "length": 9,
-      "value": "\"Suspend\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/CardEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 2199,
-      "length": 8,
-      "value": "\"Delete\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 652,
       "length": 5,
       "value": "10001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 1026,
       "length": 5,
       "value": "10005"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 1263,
       "length": 5,
       "value": "10006"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 5,
       "value": "10007"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 1720,
       "length": 5,
       "value": "10009"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 1949,
       "length": 5,
       "value": "10010"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 2531,
       "length": 5,
       "value": "10011"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 2845,
       "length": 5,
       "value": "20001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 3065,
       "length": 5,
       "value": "20002"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 3253,
       "length": 5,
       "value": "20003"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 3435,
       "length": 5,
       "value": "20004"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 3705,
       "length": 5,
       "value": "20005"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 4179,
       "length": 5,
       "value": "20006"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 4525,
       "length": 5,
       "value": "20007"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 5189,
       "length": 5,
       "value": "20008"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 6091,
       "length": 5,
       "value": "20009"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 6369,
       "length": 5,
       "value": "20010"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 6621,
       "length": 5,
       "value": "20011"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 7033,
       "length": 5,
       "value": "30001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 7715,
       "length": 5,
       "value": "40001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 8089,
       "length": 5,
       "value": "40002"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 8547,
       "length": 5,
       "value": "40003"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 8989,
       "length": 5,
       "value": "40011"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 9388,
       "length": 5,
       "value": "40012"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 10101,
       "length": 5,
       "value": "40013"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 10807,
       "length": 5,
       "value": "40014"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 11384,
       "length": 5,
       "value": "40015"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 11642,
       "length": 5,
       "value": "60001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 11892,
       "length": 5,
       "value": "60002"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 12105,
       "length": 5,
       "value": "70001"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 12183,
       "length": 5,
       "value": "70002"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 12255,
       "length": 5,
       "value": "70003"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 12341,
       "length": 5,
       "value": "70004"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Error.swift",
       "kind": "IntegerLiteral",
       "offset": 12442,
       "length": 5,
       "value": "70005"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 652,
-      "length": 5,
-      "value": "10001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1026,
-      "length": 5,
-      "value": "10005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1263,
-      "length": 5,
-      "value": "10006"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1507,
-      "length": 5,
-      "value": "10007"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1720,
-      "length": 5,
-      "value": "10009"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1949,
-      "length": 5,
-      "value": "10010"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2531,
-      "length": 5,
-      "value": "10011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2845,
-      "length": 5,
-      "value": "20001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3065,
-      "length": 5,
-      "value": "20002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3253,
-      "length": 5,
-      "value": "20003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3435,
-      "length": 5,
-      "value": "20004"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3705,
-      "length": 5,
-      "value": "20005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4179,
-      "length": 5,
-      "value": "20006"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4525,
-      "length": 5,
-      "value": "20007"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5189,
-      "length": 5,
-      "value": "20008"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6091,
-      "length": 5,
-      "value": "20009"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6369,
-      "length": 5,
-      "value": "20010"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6621,
-      "length": 5,
-      "value": "20011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7033,
-      "length": 5,
-      "value": "30001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7715,
-      "length": 5,
-      "value": "40001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8089,
-      "length": 5,
-      "value": "40002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8547,
-      "length": 5,
-      "value": "40003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8989,
-      "length": 5,
-      "value": "40011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9388,
-      "length": 5,
-      "value": "40012"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10101,
-      "length": 5,
-      "value": "40013"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10807,
-      "length": 5,
-      "value": "40014"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11384,
-      "length": 5,
-      "value": "40015"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11642,
-      "length": 5,
-      "value": "60001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11892,
-      "length": 5,
-      "value": "60002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12105,
-      "length": 5,
-      "value": "70001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12183,
-      "length": 5,
-      "value": "70002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12255,
-      "length": 5,
-      "value": "70003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12341,
-      "length": 5,
-      "value": "70004"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12442,
-      "length": 5,
-      "value": "70005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 652,
-      "length": 5,
-      "value": "10001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1026,
-      "length": 5,
-      "value": "10005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1263,
-      "length": 5,
-      "value": "10006"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1507,
-      "length": 5,
-      "value": "10007"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1720,
-      "length": 5,
-      "value": "10009"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1949,
-      "length": 5,
-      "value": "10010"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2531,
-      "length": 5,
-      "value": "10011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2845,
-      "length": 5,
-      "value": "20001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3065,
-      "length": 5,
-      "value": "20002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3253,
-      "length": 5,
-      "value": "20003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3435,
-      "length": 5,
-      "value": "20004"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3705,
-      "length": 5,
-      "value": "20005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4179,
-      "length": 5,
-      "value": "20006"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4525,
-      "length": 5,
-      "value": "20007"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5189,
-      "length": 5,
-      "value": "20008"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6091,
-      "length": 5,
-      "value": "20009"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6369,
-      "length": 5,
-      "value": "20010"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6621,
-      "length": 5,
-      "value": "20011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7033,
-      "length": 5,
-      "value": "30001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7715,
-      "length": 5,
-      "value": "40001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8089,
-      "length": 5,
-      "value": "40002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8547,
-      "length": 5,
-      "value": "40003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8989,
-      "length": 5,
-      "value": "40011"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9388,
-      "length": 5,
-      "value": "40012"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10101,
-      "length": 5,
-      "value": "40013"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10807,
-      "length": 5,
-      "value": "40014"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11384,
-      "length": 5,
-      "value": "40015"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11642,
-      "length": 5,
-      "value": "60001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11892,
-      "length": 5,
-      "value": "60002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12105,
-      "length": 5,
-      "value": "70001"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12183,
-      "length": 5,
-      "value": "70002"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12255,
-      "length": 5,
-      "value": "70003"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12341,
-      "length": 5,
-      "value": "70004"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Error.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12442,
-      "length": 5,
-      "value": "70005"
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/D1\/D1Task.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/D1\/D1Task.swift",
       "kind": "BooleanLiteral",
-      "offset": 3018,
+      "offset": 3174,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
       "kind": "BooleanLiteral",
       "offset": 291,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
       "kind": "StringLiteral",
       "offset": 328,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 42,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 1,
       "value": "\"\/d1c\/filestorage\/digitalcard\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCImageStorage.swift",
       "kind": "BooleanLiteral",
       "offset": 524,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
       "kind": "StringLiteral",
       "offset": 1013,
       "length": 22,
       "value": "\"Error in status API.\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
       "kind": "StringLiteral",
       "offset": 1089,
       "length": 27,
       "value": "\"Error in passEntries API.\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
       "kind": "StringLiteral",
       "offset": 1176,
       "length": 33,
       "value": "\"Error in remotePassEntries API.\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
       "kind": "StringLiteral",
       "offset": 1270,
       "length": 24,
       "value": "\"Error in generate API.\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1IssuerProvisioningExtensionHandler.swift",
       "kind": "Array",
-      "offset": 1441,
+      "offset": 1435,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 248,
       "length": 66,
       "value": "\"6b3c1c80adce16693e5bd06eb3d65f845681218ad4d5d90bbf3c62d6059566c1\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 405,
       "length": 66,
       "value": "\"aaac5e8562cd7131c5f4b43179c811f69a21e2034fbdd55c159e48f5bb19d57c\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 66,
       "value": "\"aeaf981eec5ee43238ba8074425774bc15dd725f0e37b58fb8f24373cfaa7a90\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 66,
       "value": "\"97d89df3a3e230a701947a5666af8895be4c73042b0e37eea8bc520a5a429a45\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 919,
       "length": 66,
       "value": "\"7a5565a5efab77b3536cfcb3cd53cea66a1ab286f33761ae07d49e02cc6c7a20\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 66,
       "value": "\"ede771e1e2d9b4855b14a51a57867fec66c25da97a9c2e5c808bec55b86b7fad\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1241,
       "length": 66,
       "value": "\"ec6e288ad0c4c3ff691d7e0fea909675b1ad6f4443ca30cfdee7e7cb5e0921b0\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
       "offset": 1406,
       "length": 66,
       "value": "\"de4094e16585e5ba4a2a923e661b0cee1a25e05b0afcb184700789709e5f509c\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCUtils.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/D1WalletExtensionWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 180,
+      "offset": 1556,
+      "length": 66,
+      "value": "\"593d9a852f8f72474399e20d991925b3c738fe713fbe394900bfa2bf7dce5461\""
+    },
+    {
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/TPC\/TPCUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
       "length": 16,
       "value": "\"TPCErrorDomain\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/TPC\/TPCWrapper.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 167,
-      "length": 10,
-      "value": "\"D1.TPCWrapper\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6370,
+      "offset": 6777,
       "length": 10,
       "value": "\"APPROVED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6469,
+      "offset": 6876,
       "length": 19,
       "value": "\"PARTIALY_APPROVED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6559,
+      "offset": 6966,
       "length": 10,
       "value": "\"DECLINED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6640,
+      "offset": 7047,
       "length": 10,
       "value": "\"REVERSED\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6370,
-      "length": 10,
-      "value": "\"APPROVED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6469,
-      "length": 19,
-      "value": "\"PARTIALY_APPROVED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6559,
-      "length": 10,
-      "value": "\"DECLINED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6640,
-      "length": 10,
-      "value": "\"REVERSED\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6854,
+      "offset": 7261,
       "length": 8,
       "value": "\"REFUND\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6957,
+      "offset": 7364,
       "length": 10,
       "value": "\"PURCHASE\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 7058,
+      "offset": 7465,
       "length": 12,
       "value": "\"WITHDRAWAL\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 7155,
+      "offset": 7562,
       "length": 9,
       "value": "\"PAYMENT\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 7253,
+      "offset": 7660,
       "length": 7,
       "value": "\"OTHER\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 6854,
-      "length": 8,
-      "value": "\"REFUND\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 6957,
-      "length": 10,
-      "value": "\"PURCHASE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7058,
-      "length": 12,
-      "value": "\"WITHDRAWAL\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7155,
-      "length": 9,
-      "value": "\"PAYMENT\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7253,
-      "length": 7,
-      "value": "\"OTHER\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7489,
+      "offset": 7896,
       "length": 10,
       "value": "\"MERCHANT\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
       "kind": "StringLiteral",
-      "offset": 7607,
+      "offset": 8014,
       "length": 12,
       "value": "\"CARDHOLDER\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7489,
-      "length": 10,
-      "value": "\"MERCHANT\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardTransactionRecord.swift",
-      "kind": "StringLiteral",
-      "offset": 7607,
-      "length": 12,
-      "value": "\"CARDHOLDER\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 6,
       "value": "\"TEXT\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 6,
       "value": "\"HTML\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 255,
-      "length": 6,
-      "value": "\"TEXT\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 6,
-      "value": "\"HTML\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
       "kind": "StringLiteral",
       "offset": 505,
       "length": 20,
       "value": "\"CARD_STATUS_UPDATE\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 15,
       "value": "\"AUTHORIZATION\""
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 505,
-      "length": 20,
-      "value": "\"CARD_STATUS_UPDATE\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/MessagingEnums.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 15,
-      "value": "\"AUTHORIZATION\""
-    },
-    {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "BooleanLiteral",
       "offset": 183,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "BooleanLiteral",
       "offset": 357,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "Array",
       "offset": 406,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "Array",
       "offset": 455,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "Array",
       "offset": 472,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "BooleanLiteral",
       "offset": 535,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "BooleanLiteral",
       "offset": 582,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/9Qzo-5Qzj\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.0.0-20240718-635b5533-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
+      "filePath": "\/Users\/idpmobile\/gitlabci\/builds\/x_MzhcAK1\/0\/bps\/dme\/project\/d1sdk\/ios\/build\/D1SDK-4.1.0-20250724-e634ad14-iOS\/D1tmp\/SDK\/D1Core\/CardSettings_Memento.swift",
       "kind": "BooleanLiteral",
       "offset": 629,
       "length": 5,

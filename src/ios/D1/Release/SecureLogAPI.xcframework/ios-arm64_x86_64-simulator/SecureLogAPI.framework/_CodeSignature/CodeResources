@@ -6,53 +6,84 @@
 	<dict>
 		<key>Headers/SecureLog.h</key>
 		<data>
-		cJ12U810CbxIgE315rIerBnCYNo=
+		RmQSurZXjGhxAjFlDi2QNIu74Yc=
 		</data>
 		<key>Headers/SecureLogAPI.h</key>
 		<data>
-		x6Ju/65f7oxyRJsicO3qIPUSmX4=
+		pL6GiXF0Y/nq0cnVJY0OseDxTBU=
 		</data>
 		<key>Headers/SecureLogConfig.h</key>
 		<data>
-		+bvs5RYONyMM52ZRfujGM0k+LOM=
+		9+qSa52AQsQeuDd6ij+E/oskHeI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4cf/0cHXAMLyfUSw1E/FUjg5FMM=
+		yPqYD6bp0sZHfoo5MJg9SOf1s3I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Zd29GZgWwWubutMywjFfjnRgYQ0=
+		LU4/Dmzh9QUZYnEKxdXlrkuL6Fs=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		LrLtbU3OIgw+1sqoP2p3QXXrXlg=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/SecureLog.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RmQSurZXjGhxAjFlDi2QNIu74Yc=
+			</data>
 			<key>hash2</key>
 			<data>
-			y5+jy+esyJfNdTTN4x9kaO9kl87Iiw480aOun5FX4sU=
+			ijJ0+Co7PsQoOlOYp/SDg48UQO0lHfcGdsyUV2ffP+I=
 			</data>
 		</dict>
 		<key>Headers/SecureLogAPI.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pL6GiXF0Y/nq0cnVJY0OseDxTBU=
+			</data>
 			<key>hash2</key>
 			<data>
-			YQrmbh4betSNwi20sKXE1XZyEDqN6kVZeX+SPLNc+SY=
+			aD0+RJiDmXK4LDrYnDWPpnm3K2c+QoRbK2qiLovEQPU=
 			</data>
 		</dict>
 		<key>Headers/SecureLogConfig.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9+qSa52AQsQeuDd6ij+E/oskHeI=
+			</data>
 			<key>hash2</key>
 			<data>
-			eIU5Q+gqObawurO6MNR6xnl0dMtFRwVaOSi8wHgC4no=
+			QS89UkRqQNJG7O7Z+O3fENxFXAGaQ036d4ppJ8vOVKg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LU4/Dmzh9QUZYnEKxdXlrkuL6Fs=
+			</data>
 			<key>hash2</key>
 			<data>
-			mhqekvwipuNyxWxU6V/ZCdX26JdmaBbkbVcfIpwsdLI=
+			xBPmyCxqR5NR6JKKTPYFXXtL9puSWF/qS/sCqGrOWMs=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LrLtbU3OIgw+1sqoP2p3QXXrXlg=
+			</data>
+			<key>hash2</key>
+			<data>
+			r95Yw/EZek/dMNqFJBxeqovlW2QFTkpDWu835QihZBo=
 			</data>
 		</dict>
 	</dict>
