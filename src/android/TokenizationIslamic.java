@@ -533,7 +533,7 @@ public class TokenizationIslamic extends CordovaPlugin {
 
     public void addDigitalCard(String cardID, CallbackContext callback) {
         try {
-            Log.i(TAG, "AddDigitalCard CardID : " + cardID);
+            Log.i(TAG, "Add Card to Issuer Wallet of CardID : " + cardID);
             currentCardID = cardID;
             D1PayWallet d1PayWallet = mD1Task.getD1PayWallet();
 
@@ -1418,7 +1418,7 @@ public class TokenizationIslamic extends CordovaPlugin {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.i(TAG, "onActivityResult received: " + requestCode + ", " + resultCode);
+        Log.i(TAG, "Google Wallet onActivityResult received: " + requestCode + ", " + resultCode);
 
         if (mD1Task != null) {
             mD1Task.handleCardResult(requestCode, resultCode, data);
